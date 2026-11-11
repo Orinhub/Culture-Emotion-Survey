@@ -754,5 +754,257 @@
    "setup": "آپ دکاندار سے تیز آواز میں بات کر لیتے ہیں جبکہ آپ کے والد صاحب ساتھ کھڑے ہوتے ہیں۔ خاموشی سے سمجھا دیتے ہیں",
    "dialogue": "کہ اب اس پر کوئی ہنگامے کی ضرورت نہیں۔"
   }
+ ],
+ "EN-English": [
+  {
+   "id": "EN_FAM_01",
+   "setup": "Your auntie has come to visit your home with her family without any notice. You serve them with tea and food that you have at home at the moment. Laughing, your auntie says",
+   "dialogue": "Your mother still has not learned to always arrange food for guests beforehand."
+  },
+  {
+   "id": "EN_FAM_02",
+   "setup": "You came back home after work and sat on the couch to rest. Your significant other sat beside you and said",
+   "dialogue": "You are coming home late these days and staying at home watching TV on the weekend, I can barely spend some quality time with you."
+  },
+  {
+   "id": "EN_FAM_03",
+   "setup": "Your friends planned a trip abroad. You came home and asked your mother when she was cooking. She replied",
+   "dialogue": "No, it’s not safe and your father will be mad."
+  },
+  {
+   "id": "EN_FAM_04",
+   "setup": "Your younger sibling was caught watching an inappropriate video on the internet. They quickly closed their laptop and said",
+   "dialogue": "I just opened a website and this ad popped up."
+  },
+  {
+   "id": "EN_FAM_05",
+   "setup": "You are at your cousin’s wedding that has a buffet. You were serving food to eat when suddenly one of your uncles came by and smiled",
+   "dialogue": "It’s good to eat a lot, after all we are from a well-off family."
+  },
+  {
+   "id": "EN_SOC_01",
+   "setup": "Your friend had borrowed some money from you and told you they will give it back in 3 days. 10 days have passed since they were supposed to give back the money. You asked for the money back out of urgency, and they replied",
+   "dialogue": "Sorry, I am very broke right now, I’ll try to give it back in 3 days."
+  },
+  {
+   "id": "EN_SOC_02",
+   "setup": "You were walking in the street with your friend when they tried to throw a bottle into a trash bin but it fell on the ground. Instead of picking it up, they said",
+   "dialogue": "It’s near the bin so at least, people usually litter everywhere. At least a worker can pick it up easily."
+  },
+  {
+   "id": "EN_SOC_03",
+   "setup": "You saw a female smoking in the street when an older woman next to you said",
+   "dialogue": "Women are so shameless these days!"
+  },
+  {
+   "id": "EN_SOC_04",
+   "setup": "You were eating outside with your colleagues when one of your colleagues said",
+   "dialogue": "You have left so much food, you shouldn’t waste so much food."
+  },
+  {
+   "id": "EN_SOC_05",
+   "setup": "At the office canteen, a colleague nods toward two men eating together who are known to be a couple. He sips on his coffee saying",
+   "dialogue": "Everyone knows about those two. Do you actually sit with them at lunch?"
+  },
+  {
+   "id": "EN_APP_01",
+   "setup": "You have been trying to lose weight for weeks, however you still feel nothing is working. You went to an office party, when your colleague came smiling",
+   "dialogue": "Wow, don’t you look incredible!"
+  },
+  {
+   "id": "EN_APP_02",
+   "setup": "After weeks of dealing with the grief of losing your loved one, you went out to shop for a change. Upon entering a shop, the salesperson said",
+   "dialogue": "Sorry, we don’t have anything of your size, please check another shop."
+  },
+  {
+   "id": "EN_APP_03",
+   "setup": "You were at your close friend’s wedding when you saw a relative of hers dressed like a bride. When you went nearby, you heard her say",
+   "dialogue": "I just wore my wedding dress once so I thought why not wear it again!"
+  },
+  {
+   "id": "EN_APP_04",
+   "setup": "You are at a funeral when you noticed someone wearing red entered the room. She said",
+   "dialogue": "I’m so sorry for your loss, I came directly from work."
+  },
+  {
+   "id": "EN_APP_05",
+   "setup": "You are a man with long hair sitting by the window, when a friend came from behind and said",
+   "dialogue": "I almost thought you were a woman."
+  },
+  {
+   "id": "EN_REL_01",
+   "setup": "You are out with your friend from a different religion. A topic rose about your religion and they didn’t use any honorifics while addressing an important person of your religion. They said",
+   "dialogue": "In my defence that is not my faith."
+  },
+  {
+   "id": "EN_REL_02",
+   "setup": "You are out in a restaurant to eat after a long day. Upon entering you find out there’s no dishes based on your dietary preference. The waiter said",
+   "dialogue": "Sorry, we are brand new and haven’t included all food preferences."
+  },
+  {
+   "id": "EN_REL_03",
+   "setup": "You are enjoying the new year festival of your country, when a stranger came to you and rudely said",
+   "dialogue": "This is against our faith, you are ruining our belief by joining them!"
+  },
+  {
+   "id": "EN_REL_04",
+   "setup": "You were invited to a friend’s house and when you sat down to eat, you realised they made food that can violate your faith. Your friend’s mother said",
+   "dialogue": "Don’t worry we also have made dishes that you can eat."
+  },
+  {
+   "id": "EN_REL_05",
+   "setup": "You went abroad to study. Upon registering, your counsellor said",
+   "dialogue": "It’s prohibited to pray inside the dormitory. You can only pray in a designated area, such as a mosque, church, or temple etc."
+  },
+  {
+   "id": "EN_SEX_01",
+   "setup": "You are out with your significant other, when their friend of the opposite gender came and hugged them. They said",
+   "dialogue": "It’s been such a long time since I have seen you!"
+  },
+  {
+   "id": "EN_SEX_02",
+   "setup": "For the past few months, you and your romantic partner have been having issues over marriage, when one night they called and said",
+   "dialogue": "My parents have arranged a meeting with someone."
+  },
+  {
+   "id": "EN_SEX_03",
+   "setup": "You were running an errand when you met your neighbour. Smiling, she said",
+   "dialogue": "It’s been a while since I have seen you, did you get married or something?"
+  },
+  {
+   "id": "EN_SEX_04",
+   "setup": "You have been married for 2 years and went to a family function, when suddenly a relative said",
+   "dialogue": "When will you give us the good news? It’s been so long since you got married."
+  },
+  {
+   "id": "EN_SEX_05",
+   "setup": "You were out with your lover when suddenly you saw your younger sibling. Later at night, you talk with them, and they said",
+   "dialogue": "It’s okay, I won’t tell mum. But you need to treat me with something."
+  },
+  {
+   "id": "EN_PRO_01",
+   "setup": "You are a doctor, a 300lb patient comes in with medical issues related to his weight. His wife tells you",
+   "dialogue": "Is he going to be ok? We are actually expecting, I’m 10 weeks pregnant."
+  },
+  {
+   "id": "EN_PRO_02",
+   "setup": "You took a sick day and came back to find your tasks had been redistributed. Your teammate said",
+   "dialogue": "We just didn't want anything to fall behind, hope you're feeling better."
+  },
+  {
+   "id": "EN_PRO_03",
+   "setup": "You are a wedding dress designer, you already altered the design twice when the client sends an AI generated picture of a wedding dress and says",
+   "dialogue": "I want the bodice to be exactly like this."
+  },
+  {
+   "id": "EN_PRO_04",
+   "setup": "You are a PhD student, who just presented their proposal in a conference. You went to the washroom and overheard someone saying",
+   "dialogue": "This presentation was such a waste of time."
+  },
+  {
+   "id": "EN_PRO_05",
+   "setup": "You are a teacher in an elementary school, during the Parent-Teacher meeting, one of the parent’s told you",
+   "dialogue": "My son did so well in math in his previous school. You should teach him properly if you want him to do well."
+  },
+  {
+   "id": "EN_FOOD_01",
+   "setup": "At a family event, you are sat at a table with your close relatives. When the food arrived, you served yourself first when your grandma said",
+   "dialogue": "Today’s kids don’t even have the manner to serve their elders first!"
+  },
+  {
+   "id": "EN_FOOD_02",
+   "setup": "You asked for the recipe of a dish you loved at a relative’s home. She smiled and said",
+   "dialogue": "It’s a family secret recipe, I can only share it with closed ones."
+  },
+  {
+   "id": "EN_FOOD_03",
+   "setup": "You made a non-vegetarian dish for a potluck at your friend’s house. Upon arriving you realised they do not allow meat in the house. They looked at you apologetically and threw out the dish in the trash outside while saying",
+   "dialogue": "I am so sorry but it’s a rule in the home."
+  },
+  {
+   "id": "EN_FOOD_04",
+   "setup": "Your friend points toward a woman feeding her son curry and rice with her hand and says",
+   "dialogue": "Seriously, who eats like that in public?"
+  },
+  {
+   "id": "EN_FOOD_05",
+   "setup": "You reached for food with your left hand at a formal family lunch and dropped a bit of rice on the table. Your uncle glanced over and said",
+   "dialogue": "One of the reasons is to use your right hand to serve, other than just being respectful."
+  },
+  {
+   "id": "EN_PRIV_01",
+   "setup": "You came into your room that you share with your twin sister. You quickly checked your journal, when your sister said",
+   "dialogue": "Don’t worry, I didn’t read it. I’m not interested to know how you want to see your crush everyday."
+  },
+  {
+   "id": "EN_PRIV_02",
+   "setup": "You suddenly woke up to the sound of chattering, when you noticed there’s a worker in the room. Your dad looked at you and said",
+   "dialogue": "You should get up now, it’s already late."
+  },
+  {
+   "id": "EN_PRIV_03",
+   "setup": "You just got home and found guests in the house. You greeted them and they mentioned a personal decision that was supposed to be a secret from extended relatives. When you confronted your mother, she said",
+   "dialogue": "I didn’t know you don’t want people to know about it now."
+  },
+  {
+   "id": "EN_PRIV_04",
+   "setup": "Your grandma walked into the room when you were on call, she replied",
+   "dialogue": "What? It’s just me. What’s with the privacy between family members?"
+  },
+  {
+   "id": "EN_PRIV_05",
+   "setup": "Your friend posted a photo of them with you in the background in an awkward position. When you mentioned it, they replied",
+   "dialogue": "I look good in this, don’t worry no one will look at you."
+  },
+  {
+   "id": "EN_EMO_01",
+   "setup": "You cancelled weekend plans with your friends because you weren't up to socialising. One of them texted",
+   "dialogue": "No worries, but you've been distant lately. Let me know if I can help anyway possible."
+  },
+  {
+   "id": "EN_EMO_02",
+   "setup": "You mentioned crying after a difficult day at your grandmother's house. She said",
+   "dialogue": "Come eat something first, you'll feel better after."
+  },
+  {
+   "id": "EN_EMO_03",
+   "setup": "During an important business trip you found out your grandfather passed away. Your boss said",
+   "dialogue": "You can leave today but you need to come back tomorrow as this is very important for our company."
+  },
+  {
+   "id": "EN_EMO_04",
+   "setup": "You mentioned feeling overwhelmed with work to your mother, hoping for some support. She said",
+   "dialogue": "We all go through stress, you'll manage, you always do."
+  },
+  {
+   "id": "EN_EMO_05",
+   "setup": "You told your roommate to turn off the light and use their desk light instead as you’re not feeling well. They replied, while they have been scrolling through social media",
+   "dialogue": "But I can’t study with that light."
+  },
+  {
+   "id": "EN_PUB_01",
+   "setup": "You laughed loudly with your friend in a quiet metro, when suddenly a commuter said",
+   "dialogue": "Kindly keep your voice low."
+  },
+  {
+   "id": "EN_PUB_02",
+   "setup": "You got into an argument with your cousin at an event. Your auntie came and said",
+   "dialogue": "Both of you settle this or go outside!"
+  },
+  {
+   "id": "EN_PUB_03",
+   "setup": "After failing an exam, your friend started weeping in public, when a passerby came to you and asked",
+   "dialogue": "Are you causing any trouble to her?"
+  },
+  {
+   "id": "EN_PUB_04",
+   "setup": "You are at a market with your mother when she started to haggle loudly. The shopkeeper told you",
+   "dialogue": "Come on, at least you make her understand how expensive these are in other markets."
+  },
+  {
+   "id": "EN_PUB_05",
+   "setup": "You raised your voice at a shopkeeper while your father stood nearby. He said quietly",
+   "dialogue": "No need to make a scene over this."
+  }
  ]
 }
