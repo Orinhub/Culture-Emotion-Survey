@@ -62,7 +62,7 @@ const CONFIG = {
   PAGES: 3,
   ITEMS_PER_PAGE: 10,
   ATTENTION_AT: [],                 // e.g. [9, 24] adds 2 attention checks at those positions (they use up 2 of the 30 slots)
-  CONTACT: "18244910576@163.com",    // shown on the consent screen
+  CONTACT: "[18244910576@163.com]",    // shown on the consent screen
 };
 const REAL_PER_ANNOTATOR = CONFIG.PAGES * CONFIG.ITEMS_PER_PAGE - CONFIG.ATTENTION_AT.length; // 30
 
@@ -76,7 +76,11 @@ const VARIANTS = {
   "BD-Bengali": { country:"Bangladesh", language:"Bengali", lang:"bn", cls:"bn", dir:"ltr", prefix:"BD" },
   "IN-Hindi":   { country:"India",      language:"Hindi",   lang:"hi", cls:"hi", dir:"ltr", prefix:"IN" },
   "PK-Urdu":    { country:"Pakistan",   language:"Urdu",    lang:"ur", cls:"ur", dir:"rtl", prefix:"PK" },
+  // English version: open to people from the three countries; the country is part of their annotator code.
+  "EN-English": { country:null,         language:"English", lang:"en", cls:"en", dir:"ltr", prefix:"EN" },
 };
+const COUNTRY_CODE = { Bangladesh:"BD", India:"IN", Pakistan:"PK" };
+const OWN_LANG = "Bengali / Hindi / Urdu", ENGLISH = "English";
 
 /* ============================== ITEMS ==============================
    PLACEHOLDER BANK for testing. Replace ITEMS with your real localized items, one array per group:
@@ -236,20 +240,25 @@ function select(id,label,options,optional){
     h("select",{id},h("option",{value:""},optional?"Prefer not to say":"Select…"),options.map(o=>h("option",{value:o},o)))];
 }
 
-/* 2. about you -> routes to the Hindi / Bengali / Urdu set; code is generated automatically */
+/* 2. about you -> routes to the Hindi / Bengali / Urdu set, or to the English set; code is generated automatically */
 function showIntake(consentedAt){
   const err=h("div",{class:"err"});
   const btn=h("button",{class:"btn",onclick:async()=>{
     const v=id=>document.getElementById(id).value;
-    if(!v("country")||!v("language")||!v("age")){err.textContent="Please answer country, language and age.";return;}
-    const key=Object.keys(VARIANTS).find(k=>VARIANTS[k].country===v("country")&&VARIANTS[k].language===v("language"));
+    if(!v("country")||!v("language")||!v("age")||!v("survey_lang")){err.textContent="Please answer country, language, age and survey language.";return;}
+    const english=v("survey_lang")===ENGLISH;
+    if(english&&!v("english_level")){err.textContent="Please tell us how well you read English.";return;}
+    const key=english
+      ? (COUNTRY_CODE[v("country")]?"EN-English":null)
+      : Object.keys(VARIANTS).find(k=>VARIANTS[k].country===v("country")&&VARIANTS[k].language===v("language"));
     if(!key||v("age")==="Under 18"){
       show(h("div",{class:"panel"},h("h1",null,"Thank you"),
         h("p",null,"This study is not currently recruiting participants in your group. We appreciate your interest.")));return;
     }
     const batch=Math.max(1,parseInt(new URLSearchParams(location.search).get("batch"),10)||1);
-    const st={id:newId(VARIANTS[key].prefix),variant:key,batch,consented:true,consentedAt,page:1,answers:{},saved:{},done:false,
-      demo:{country:v("country"),language:v("language"),age_band:v("age"),gender:v("gender"),religion:v("religion")}};
+    const st={id:newId(english?"EN-"+COUNTRY_CODE[v("country")]:VARIANTS[key].prefix),variant:key,batch,consented:true,consentedAt,page:1,answers:{},saved:{},done:false,
+      demo:{country:v("country"),language:v("language"),age_band:v("age"),gender:v("gender"),religion:v("religion"),
+        survey_language:v("survey_lang"),english_level:english?v("english_level"):""}};
     btn.disabled=true;err.textContent="";
     try{
       await post({type:"annotator",annotator_id:st.id,variant:st.variant,batch:st.batch,...st.demo,
@@ -262,6 +271,9 @@ function showIntake(consentedAt){
     h("p",null,"A few quick questions. They are used only to describe the group of participants. A random annotator code will be given to you on the next page."),
     select("country","Which country are you from?",["Bangladesh","India","Pakistan","Other"]),
     select("language","Which language do you speak at home?",["Bengali","Hindi","Urdu","Other"]),
+    select("survey_lang","Which version of the survey do you want to answer?",[OWN_LANG,ENGLISH]),
+    h("p",{class:"note"},"Choose English if you are comfortable reading English; the situations will then be shown in English. Otherwise choose the first option and the situations will be in your own language."),
+    select("english_level","How well do you read English? (needed for the English version)",["Basic","Good","Fluent","Native"]),
     select("age","Your age",["Under 18","18–24","25–34","35–44","45–54","55+"]),
     select("gender","Gender",["Female","Male","Non-binary / other"],true),
     select("religion","Religion",["Islam","Hinduism","Christianity","Buddhism","Other religion","No religion"],true),
